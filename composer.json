@@ -1,5 +1,5 @@
 {
-	"name": "thomasphansen/GUS",
+	"name": "spysystem/GUS",
 	"description": "PHP library for GUSNWS Web Services",
 	"license": "proprietary",
 	"require": {
