@@ -2,7 +2,7 @@
 
 namespace GUS;
 
-class makeSpecificationObject
+class makeSpecificationObjectWithErrorDesc
 {
 
 	/**
@@ -15,14 +15,10 @@ class makeSpecificationObject
 	 */
 	protected $arg1 = null;
 
-	/**
-	 * @param string $arg0
-	 * @param specificationDTO[]|null $arg1
-	 */
-	public function __construct($arg0, array $arg1 = null)
+	
+	public function __construct()
 	{
-		$this->arg0	= $arg0;
-		$this->arg1	= $arg1;
+	
 	}
 
 	/**
@@ -35,7 +31,7 @@ class makeSpecificationObject
 
 	/**
 	 * @param string $arg0
-	 * @return \GUS\makeSpecificationObject
+	 * @return \GUS\makeSpecificationObjectWithErrorDesc
 	 */
 	public function setArg0($arg0)
 	{
@@ -53,7 +49,7 @@ class makeSpecificationObject
 
 	/**
 	 * @param specificationDTO[] $arg1
-	 * @return \GUS\makeSpecificationObject
+	 * @return \GUS\makeSpecificationObjectWithErrorDesc
 	 */
 	public function setArg1(array $arg1 = null)
 	{

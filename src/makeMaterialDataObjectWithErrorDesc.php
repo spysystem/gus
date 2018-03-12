@@ -2,7 +2,7 @@
 
 namespace GUS;
 
-class makeSpecificationObject
+class makeMaterialDataObjectWithErrorDesc
 {
 
 	/**
@@ -11,18 +11,14 @@ class makeSpecificationObject
 	protected $arg0 = null;
 
 	/**
-	 * @var specificationDTO[] $arg1
+	 * @var materialDataDTO[] $arg1
 	 */
 	protected $arg1 = null;
 
-	/**
-	 * @param string $arg0
-	 * @param specificationDTO[]|null $arg1
-	 */
-	public function __construct($arg0, array $arg1 = null)
+	
+	public function __construct()
 	{
-		$this->arg0	= $arg0;
-		$this->arg1	= $arg1;
+	
 	}
 
 	/**
@@ -35,7 +31,7 @@ class makeSpecificationObject
 
 	/**
 	 * @param string $arg0
-	 * @return \GUS\makeSpecificationObject
+	 * @return \GUS\makeMaterialDataObjectWithErrorDesc
 	 */
 	public function setArg0($arg0)
 	{
@@ -44,7 +40,7 @@ class makeSpecificationObject
 	}
 
 	/**
-	 * @return specificationDTO[]
+	 * @return materialDataDTO[]
 	 */
 	public function getArg1()
 	{
@@ -52,8 +48,8 @@ class makeSpecificationObject
 	}
 
 	/**
-	 * @param specificationDTO[] $arg1
-	 * @return \GUS\makeSpecificationObject
+	 * @param materialDataDTO[] $arg1
+	 * @return \GUS\makeMaterialDataObjectWithErrorDesc
 	 */
 	public function setArg1(array $arg1 = null)
 	{
