@@ -51,7 +51,7 @@ class GUSNWSService extends \SoapClient
 		return new static([
 			'trace'			=> true,
 			'exceptions'	=> true,
-			'soap_version'	=> 2,
+			'soap_version'	=> SOAP_1_1,
 			'encoding'		=> 'UTF-8',
 			'features'		=> 1,
 		]);
