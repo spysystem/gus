@@ -1,7 +1,11 @@
 <?php
-
 namespace GUS;
 
+/**
+ * Class GUSNWSService
+ *
+ * @package GUS
+ */
 class GUSNWSService extends \SoapClient
 {
 	const WsdlUrl = 'http://5.179.89.118:8181/GUSNWS/services/GUSNWS?wsdl';
@@ -40,8 +44,9 @@ class GUSNWSService extends \SoapClient
 
 	/**
 	 * @return GUSNWSService
+	 * @throws \Exception
 	 */
-	public function Create()
+	public static function Create()
 	{
 		return new static([
 			'trace'			=> true,
